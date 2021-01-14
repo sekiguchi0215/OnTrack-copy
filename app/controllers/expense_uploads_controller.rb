@@ -1,0 +1,2 @@
+class ExpenseUploadsController < ApplicationController
+end
