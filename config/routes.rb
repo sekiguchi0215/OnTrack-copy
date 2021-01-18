@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: "sessions#new"
 
   resources :sessions, only: [:new, :create] do
-  	delete :destroy, on: :collection
+  	delete :destroy, on: :collection # "on: :collection"、idを伴わないパスを追加するときに使う。逆に、idを伴うパスを追加する場合は"on: :member"を使う。
   end
 
   resources :dashboard, only: [:index]
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :expenses, only: [:index]
   resources :expense_uploads, only: [:new, :create]
 
-  namespace :api do
+  namespace :api do　# "namespace"、コントローラをグループ化できる。　例：ユーザーが使う部分と管理者が使う部分、それぞれで分けて管理できるようにする。
   	namespace :vi do
   		resources :expenses, only: [:index, :create, :destroy, :update]
   		resources :categories, only: [:index, :create, :update, :destroy]
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   		end
 
   		resources :goals, only: [:index] do
-  			put :update, on: :collection
+  			put :update, on: :collection #patch/put
   		end
   	end
   end
