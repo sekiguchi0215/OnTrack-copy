@@ -1,0 +1,7 @@
+{
+  "name": "OnTrack",
+  "description": "A simple self-hosted budgeting app",
+  "repository": "http://github.com/inoda/ontrack",
+  "logo": "http://raw.githubusercontent.com/inoda/ontrack/master/app/assets/images/readme/logo-square.png",
+  "keywords": ["ontrack", "budgeting"]
+}
