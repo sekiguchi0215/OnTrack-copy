@@ -1,5 +1,23 @@
 {
-  "name": "OnTrack_copy",
+  "name": "ontrack",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+  	"@babel/preset-react": "^7.0.0",
+  	"@rails/actioncable": "^6.0.3-2",
+  	"@rails/activestorage": "^6.0.3-2",
+  	"@rails/ujs": "^6.0.3-2",
+  	"@rails/webpacker": "^4.0.7",
+  	"axios": "^0.21.1",
+  	"babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+  	"chart.js": "^2.8.0",
+  	"moment": "^2.24.0",
+  	"prop-types": "^15.7.2",
+  	"react": "^16.10.1",
+  	"react-datepicker": "^2.9.6",
+  	"react-dom": "^16.10.1",
+  	"react-text-mask": "^5.4.3",
+  	"sweetalert2": "^8.18.0",
+  	"text-mask-addons": "^3.8.0"
+  },
+  "version": "0.1.0"
 }
