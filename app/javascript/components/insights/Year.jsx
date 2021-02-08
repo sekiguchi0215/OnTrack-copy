@@ -39,34 +39,64 @@ class Year extends React.Component {
 
 					datasets.push({ label: category.name, data: dataPoints, backgroundColor: category.color });
 				})
+
+				this.setState({ chartData: Object.assign(this.state.chartData, { datasets: datasets }) }, this.buildChart);
 			},
 			(error) => { Alerts.genericError(); },
 		)
 	}
 
 	buildChart() {
-		
+		new Chart(document.getElementById("chart"), {
+			type: "bar",
+			data: this.state.chartData,
+			option: {
+				responsive: true,
+				maintainAspectRatio: false,
+				tooltips: {
+					callbacks: {
+						label: (t) => { return `${this.state.chartData.datasets[t.datasetIndex].label}: $${Numerics.commify(praseFloat(t.yLabel).toFixed(2))}`; }
+					}
+				},
+				scales: {
+					xAxes: [{ stacked: true }],
+					yAxes: [{
+						stacked: true,
+						ticks: {
+							callback: (label) => { return `$${Numerics.commify(label)}`; }
+						}
+					}]
+				}
+			}
+		});
+	}
+
+	render() {
+		return (
+			<div>
+				<div className="flex flex-space-between mb-30">
+					<b>Year Overview</b>
+					<div className="input-group inline">
+						<select value={this.state.year} onChange={this.handleYearChange}>
+							{this.props.availableYears.map((yr) => { return <option key={yr} value={yr}>{yr}</option> })}
+						</select>
+					</div>
+				</div>
+
+				<div className="chart-container">
+					<canvas id="chart"></canvas>
+				</div>
+			</div>
+		);
 	}
 }
 
+Year.defaultProps = {
+	availableYears: [],
+}
 
+Year.propTypes = {
+	availableYears: PropTypes.array,
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default Year;
