@@ -1,0 +1,35 @@
+.empty-or-error-status {
+	padding: 60px 40px;
+	text-align: center;
+	background: #EEF0F5;
+
+	.states-image {
+		width: 450px;
+		max-width: 100%;
+		margin-top: 50px;
+	}
+
+	.states-text {
+		background: #eee;
+		border-radius: 5px;
+	}
+
+	h2 {
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 900px) {
+	.empty-or-error-status	{
+		padding: 60px 70px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+
+		.status-image {
+			margin-left: 25px;
+			margin-top: 0;
+		}
+	}
+}
