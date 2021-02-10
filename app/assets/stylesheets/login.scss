@@ -1,0 +1,42 @@
+body.unauthenticated {
+	text-align: center;
+	background: #EEF0F5;
+	padding-top: 100px;
+}
+
+.login {
+	background: white;
+	max-width: 600px;
+	padding: 50px;
+	border-radius: 5px;
+	box-shadow: 2px 2px #d0d0d0d;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+
+	form {
+		width: 60%;
+	}
+
+	img {
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 740px) {
+	body.unauthenticated {
+		background: white;
+	}
+
+	.login {
+		box-shadow: none;
+
+		img {
+			display: none;
+		}
+
+		form {
+			width: 100%;
+		}
+	}
+}
