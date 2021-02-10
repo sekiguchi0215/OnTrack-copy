@@ -78,7 +78,7 @@ class Paginator extends React.Component {
 	itemsUpperLimit() {
 		const upperLimit - this.state.selectedPage * this.state.itemsPerPage;
 		if (this.state.totalItems < upperLimit) {
-			return this.state.totaolItems;
+			return this.state.totalItems;
 		}
 		return upperLimit;
 	}
