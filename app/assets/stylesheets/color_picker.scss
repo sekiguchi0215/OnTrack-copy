@@ -1,0 +1,20 @@
+.color-picker {
+	max-width: 210px;
+
+	.sample {
+		height: 30px;
+		width: 30px;
+		border: 1px solid #eee;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	&.active {
+		outline: 2px solid #97c6d4;
+	}
+
+	.sample:last-child {
+		margint-right: 0px;
+	}
+}
+
