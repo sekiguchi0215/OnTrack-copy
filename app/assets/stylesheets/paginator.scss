@@ -1,0 +1,42 @@
+.paginator {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #929292;
+
+	ol {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		li {
+			display: inline-block;
+			margin: 0;
+
+			a, i {
+				color: #929292;
+				text-decoration: none;
+				padding: 4px;
+			}
+		}
+
+		li.active a {
+			background: #eee;
+			text-decoration: underline;
+		}
+	}
+
+	.pagination-num-items {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 750px) {
+	.paginator {
+		justify-content: center;
+
+		.pagination-num-items {
+			display: none;
+		}
+	}
+}
