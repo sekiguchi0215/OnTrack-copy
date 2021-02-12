@@ -1,0 +1,205 @@
+// Layout
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-baseline {
+	align-items: baseline;
+}
+
+.pos-abs {
+	position: absolute;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.z-5 {
+	z-index: 5;
+}
+
+.overflow-x {
+	overflow-x: auto;
+}
+
+
+// Spacing
+
+.p-25 {
+	padding: 25px;
+}
+
+.pv-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+.pt-100 {
+	padding-top: 100px;	
+}
+
+.p-10 {
+	padding: 10px;
+}
+
+.mt-100 {
+	margin-top: 100px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-meg-20 {
+	margin-top: -20px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.ml-40 {
+	margin-left: 40px;
+}
+
+.ml-2 {
+	margin-left: 2px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mh-5 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+// Borders
+
+.border {
+	border: 1px solid #ccc;
+}
+
+.no-border {
+	border: none;
+}
+
+.br-5 {
+	border-radius: 5px;
+}
+
+
+// Text
+
+.text-muted {
+	color: #989898;
+}
+
+.text-success {
+	color: #7dbd81;
+}
+
+.text-warning {
+	color: #e29567;
+}
+
+.text-samll {
+	font-size: 12px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.link-danger {
+	color: #989898;
+	&:hover {
+		color: #cc5543;
+	}
+}
+
+
+// Sizing
+
+.mw-100 {
+	min-width: 100px;
+}
+
+.mw-150 {
+	min-width: 150px;
+}
+
+.mw-200 {
+	min-width: 200px;
+}
+
+.mw-300 {
+	min-width: 300px;
+}
+
+
+// State
+
+.hover-pointer:hover {
+	cursor: pointer;
+}
+
+.dim-til-hover {
+	opacity: 0.7;
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+.dim-on-hover {
+	opacity: 1;
+	&:hover {
+		opacity: 0.6;
+	}
+}
