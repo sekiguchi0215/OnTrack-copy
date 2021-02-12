@@ -1,0 +1,49 @@
+* {
+	font-family: "Nonito", sans-serif;
+	color: #333;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+b, span {
+	display: inline-block;
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-rigth: 30px;
+	position: relative;
+}
+
+.bg-art {
+	background-image: url(asset_path("background.png"));
+	background-repeat: repeat;
+}
+
+.bg-gray {
+	background: #EEF0F5 !important;
+}
+
+.bg-gray-slight-contrast {
+	background: #e9eaee !important;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	&.hover {
+		cursor: pointer;
+		color: #000;
+		font-weight: 600;
+	}
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
