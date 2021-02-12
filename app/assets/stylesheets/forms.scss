@@ -1,0 +1,73 @@
+.input-group {
+	margin-bottom: 20px;
+
+	.required::after {
+		content: " *";
+		color: #d86a6a;
+		font-size: 12px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	input, textarea, select {
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		display: block;
+		font-size: 1em;
+		width: 100%;
+		border: 1px solid #eee;
+		border-radius: 3px;
+		outline: none;
+		padding: 7px;
+		background: white;
+		height: 35px;
+		&:focus {
+			outline: 1px solid rgb(186, 207, 225);
+		}
+	}
+
+	input.w-auto, textarea.w-auto, select.w-auto {
+		width: auto;
+	}
+
+	.errors {
+		margin-top: 5px;
+		li {
+			color: #d86a6a;
+			font-size: 13px;
+		}
+	}
+
+	&.inline {
+		display: inherit;
+		margin-bottom: 0;
+	}
+}
+
+.font-actions {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
