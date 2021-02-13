@@ -1,0 +1,45 @@
+.category-tile {
+	border-left: 20px solid white;
+	border-radius: 10px;
+	padding: 20px;
+	background: white;
+	margin-top: 40px;
+	box-shadow: 2px 2px #dee1ea;
+	height: 110px;
+	position: relative;
+
+	.title {
+		margin-top: 10px;
+	}
+
+	.progress-bar {
+		margin-top: 20px;
+	}
+
+	.new {
+		text-align: center;
+		margin-top: 45px;
+		font-weigth: 600;
+	}
+
+	.add-expense {
+		position: absolute;
+		bottom: -26px;
+		text-align: center;
+		left: -20px;
+		right: 0;
+
+		img {
+			border: 1px solid #eee;
+			padding: 10px;
+			height: 20px;
+			line-height: 45px;
+			background: white;
+			border-radius: 100%;
+			&:hover {
+				background: #eee;
+				cursor: pointer;
+			}
+		}
+	}
+}
